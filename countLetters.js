@@ -29,4 +29,4 @@ const countLetters = (string) => {
   
 };
   
-console.log(countLetters("Shrek is the best man ever"));
+console.log(countLetters("lighthouse in the house"));

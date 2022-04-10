@@ -9,12 +9,7 @@ const assertArraysEqual = function (actual, expected) {
   }
 
 };
-
-// assertArraysEqual(eqArrays(arr1, arr2), false);
-
-
-
-const eqArrays = function(arrOne, arrTwo) {
+const eqArrays = function (arrOne, arrTwo) {
   //console.log(arrOne, arrTwo);
   for (let e = 0; e < arrOne.length; e++) {
     //console.log(arrOne[e]);
@@ -28,10 +23,29 @@ const eqArrays = function(arrOne, arrTwo) {
   }
 };
 
-
-
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   const results = {};
-  // logic to update results here
+  let index = 0;
+  // loop through the sentence string
+  for (let i = 0; i < sentence.length; i++) {
+
+    if (results[sentence[i]] === undefined) {
+      results[sentence[i]] = [index];
+    } else if (sentence[i] === ' ') {
+      index++;
+
+    } else {
+      results[sentence[i]].push(index);
+    }
+    index++;
+  }
   return results;
 };
+console.log(letterPositions("Lighouse in the house"));
+assertArraysEqual(eqArrays(letterPositions("Hello").e, [1]), true);
+// trying to map each letter to a number in an object.
+// results[sentence[i]] = [index];
+// increments the value by 1 each time it pushes a value to the obj.
+
+  // console.log(results);
+// console.log(letterPositions("hello").j)
