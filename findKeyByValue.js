@@ -11,7 +11,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 const findKeyByValue = function(object, value) {
-  return Object.keys(object).find(key => object[key] === value);
+  return Object.keys(object).find(key => object[key] === value); // .find loops through an array and returns whatever value u put in.
+  // .find(key (represents each key) => object[key] === value) - creates a var Key that represents the keys of the object
 };
 
 const bestTVShowsByGenre = {
