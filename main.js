@@ -1,1 +1,0 @@
-const sayHelloTo = require('./moduleCheck');
