@@ -20,6 +20,8 @@ const eqArrays = function (arrOne, arrTwo) {
 
 const arr1 = [];
 const arr2 = [5];
+// actual - a function call
+//expected - what we expect the outcome to be.
 const assertArraysEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual}  ===  ${expected}`);
