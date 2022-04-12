@@ -49,6 +49,6 @@ const map = function(arr, cb) {
   }
   
   return results;
-}
-const results1 = map(kpopGroups, kpop => kpop[0]);
+};
+const results1 = map(kpopGroups, kpop => kpop.length);
 console.log(results1);
