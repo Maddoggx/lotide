@@ -10,8 +10,8 @@ const assertEqual = function(actual, expected) {
 
 };
 const tail = (arr) => {
-  return arr.slice(1)
-}
+  return arr.slice(1);
+};
 /*
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 const result = tail(words);
@@ -25,3 +25,5 @@ const resultOne = tail(colour);
 
 console.log(resultOne);
 assertEqual(resultOne.length, 3);
+
+module.exports = tail;
