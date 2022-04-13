@@ -5,7 +5,7 @@ const assertEqual = function(actual, expected) {
     
   } else {
    
-   console.log(` 🛑🛑🛑 Assertion Failed ${actual} !== ${expected} `);
+    console.log(` 🛑🛑🛑 Assertion Failed ${actual} !== ${expected} `);
   }
 
 };
@@ -23,7 +23,7 @@ console.log(result);
 const colour = ["blue", "yellow", "green", "red"];
 const resultOne = tail(colour);
 
-console.log(resultOne);
-assertEqual(resultOne.length, 3);
+//console.log(resultOne);
+//assertEqual(resultOne.length, 3);
 
 module.exports = tail;
